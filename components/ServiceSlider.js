@@ -20,27 +20,27 @@ const serviceData = [
   {
     icon: <RxCrop />,
     title: 'Blockchain',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'I create decentralized Applications.',
   },
   {
     icon: <RxPencil2 />,
     title: 'Deployment',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'I deploy websites and applications.',
   },
   {
     icon: <RxDesktop />,
     title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'I devlop projects using latest technologies.',
   },
   {
     icon: <RxReader />,
     title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'I design websites and applications.',
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Search Engine Optimization.',
   },
 ];
 

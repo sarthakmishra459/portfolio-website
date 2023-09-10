@@ -33,22 +33,25 @@ export const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5 key={1} />,
+          <FaCss3 key={2} />,
+          <FaJs key={3} />,
+          <FaReact key={4} />,
+          <SiNextdotjs key={5} />,
+          <SiFramer key={6} />,
+          <FaWordpress key={7} />,
         ],
+        key: 1
       },
       {
-        title: 'Blockchain Devloper',
-        icons: [<BiHardHat />, <SiExpress />, <SiSolidity />, <SiNextdotjs />, <FaJs />],
+        title: 'Blockchain Developer',
+        icons: [<BiHardHat key={8} />, <SiExpress key={9} />, <SiSolidity key={10} />, <SiNextdotjs key={11} />, <FaJs key={12} />],
+        key: 2
       },
       {
-        title: 'App Devloper',
-        icons: [<SiKotlin />, <FaJava />, <SiAndroidstudio />, <FaReact />, <FaJs />],
+        title: 'App Developer',
+        icons: [<SiKotlin key={13} />, <FaJava key={14} />, <SiAndroidstudio key={15} />, <FaReact key={16} />, <FaJs key={17} />],
+        key: 3
       }
 
     ],
@@ -126,7 +129,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-6 xl:mb-12 px-2 xl:px-0'>1 year ago, I began learning devlopment. Since then I've done various projects in many domains and generated innovative ideas. I am a blockchain, app , web devloper and problem solver</motion.p>
+          className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-6 xl:mb-12 px-2 xl:px-0'>1 year ago, I began learning devlopment. Since then I have done various projects in many domains and generated innovative ideas. I am a blockchain, app , web devloper and problem solver</motion.p>
         {/*counters */}
         <motion.div
           variants={fadeIn('right', 0.6)}
@@ -193,7 +196,7 @@ const About = () => {
                 <div className='flex gap-x-4'>
                   {/*icons*/}
                   {item.icons?.map((icon, itemIndex) => {
-                    return <div className='text-2xl text-white'>{icon}</div>
+                    return <div key={itemIndex} className='text-2xl text-white'>{icon}</div>
                   })}
                 </div>
 
